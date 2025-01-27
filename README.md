@@ -10,6 +10,8 @@ See LICENSE file at the root of the project.
 
 License Viewer provides a convenient interface to display which package comes with which license. The tool is configurable and allows to filter data based on package name or license type. Furthermore, it enables exporting the data in various formats, including CSV and PDF, in addition to directly printing.
 
+This viewer is primarily intend to be used with [YALTF](https://github.com/yaltf/yaltf).
+
 Developed by International Committee of the Red Cross (ICRC) in collaboration with Cortex Security S.A.
 
 ![License Viewer Screenshot](/imgs/license-viewer.png "License Viewer")
@@ -55,8 +57,7 @@ Copy the scan results to `results` directory and run the following command
 # Start UI as web application
 ./license-viewer
 ```
-
-Then select a scan result and then a target to display the software packages and their corresponding licenses.
+The UI will be accessible on `localhost:8080`. On the UI, you can select a scan result and then a target to display the software packages and their corresponding licenses.
 
 ### Export
 
