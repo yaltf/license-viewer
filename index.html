@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>License Information Viewer</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/datatables.min.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title text-center">License Information Viewer</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter">
+            <div class="fixed-grid has-1-cols">
+              <div class="grid is-gap-6">
+                <div class="cell">
+                  <table
+                    id="filetable"
+                    class="table table-striped"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Please select a scan result:</th>
+                      </tr>
+                    </thead>
+                    <tfoot
+                      style="
+                        background-color: #c0c0c0;
+                        color: #ffffff;
+                        font-size: 0.9em;
+                      "
+                    >
+                      <tr>
+                        <th>Result</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="cell">
+                  <table
+                    id="targettable"
+                    class="table table-striped"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Please select a target:</th>
+                      </tr>
+                    </thead>
+                    <tfoot
+                      style="
+                        background-color: #c0c0c0;
+                        color: #ffffff;
+                        font-size: 0.9em;
+                      "
+                    >
+                      <tr>
+                        <th>Target</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <table
+              id="licensetable"
+              class="display compact cell-border"
+              cellspacing="0"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th>Package</th>
+                  <th>License</th>
+                </tr>
+              </thead>
+              <tfoot
+                style="
+                  background-color: #c0c0c0;
+                  color: #ffffff;
+                  font-size: 0.9em;
+                "
+              >
+                <tr>
+                  <th>Package</th>
+                  <th>License</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
